@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Average+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
+@import url(http://fonts.googleapis.com/css?family=Forum);
+
+h1, h2, h3 { 
+  font-family: 'Average Sans', sans-serif; 
+}
+
+h1 {
+  font-size: 48px;
+  padding-top: 50px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+a { 
+  font-family: 'Source Code Pro', monospace; 
+  color: blue; 
+  text-decoration: none; 
+  font-size: 14px;
+}
+
+a:hover { 
+  text-decoration: underline;
+}
+
+p { 
+  font-family: 'Forum', serif; 
+  font-size: 20px; 
+}
+
+html, body {
+  height: 100%;
+}
+
+body { 
+  margin: 0 auto;
+  width: 750px;
+  background-color: #f0f0f0;
+}
+
+body>div {
+  background-color: white;
+  min-height: 100%;
+  padding: 0 40px;
+  border: 0 solid #666;
+  border-width: 0 1px;
+  box-shadow: 0 0 4px 1px #999;
+}
+
+body>div>div>div { 
+  margin-left: 2em; 
+}
+
+body>div>div>div>div { 
+  margin-left: 2em; 
+}
+
