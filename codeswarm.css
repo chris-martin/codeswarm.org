@@ -1,65 +1,168 @@
-@import url(http://fonts.googleapis.com/css?family=Average+Sans);
+@import url(http://fonts.googleapis.com/css?family=Cutive);
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 @import url(http://fonts.googleapis.com/css?family=Forum);
 
-h1, h2, h3 { 
-  font-family: 'Average Sans', sans-serif; 
+h1, h2, h3 {
+  font-family: 'Cutive', serif;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 56px;
+  font-weight: normal;
+  padding: 30px 20px 20px;
+  margin: 0;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 40px;
+  color: #333;
+  padding: 80px 40px 10px;
+  margin: 0;
 }
 
 h3 {
   font-size: 20px;
+  padding: 8px 40px 0;
+  margin: 0;
+  color: #df6f00;
 }
 
-a { 
-  font-family: 'Source Code Pro', monospace; 
-  color: blue; 
-  text-decoration: none; 
+.bracket {
+  position: relative;
+  margin-bottom: 30px;
+}
+.bracket,
+.bracket>* {
+  height: 20px;
+}
+.bracket * {
+  position: absolute;
+  top: 0;
+}
+.bracket>:nth-child(1) {
+  left: 80px;
+  right: 50%;
+}
+.bracket>:nth-child(2) {
+  right: 80px;
+  left: 50%;
+}
+.bracket>*>* {
+  border: 2px solid #E18728;
+}
+.bracket>*>:nth-child(1) {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-width: 0;
+  top: 10px;
+}
+.bracket>:nth-child(1)>:nth-child(1) {
+  left: 0;
+  border-top-right-radius: 0;
+  border-right-width: 0;
+}
+.bracket>:nth-child(2)>:nth-child(1) {
+  right: 0;
+  border-top-left-radius: 0;
+  border-left-width: 0;
+}
+.bracket>*>:nth-child(2) {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top-width: 0;
+}
+.bracket>:nth-child(1)>:nth-child(2) {
+  right: -1px;
+  border-bottom-left-radius: 0;
+  border-left-width: 0;
+}
+.bracket>:nth-child(2)>:nth-child(2) {
+  left: 0;
+  border-bottom-right-radius: 0;
+  border-right-width: 0;
+}
+.bracket>*>:nth-child(3) {
+  height: 10px;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+.bracket>:nth-child(1)>:nth-child(3) {
+  left: 4px;
+  right: 9px;
+}
+.bracket>:nth-child(2)>:nth-child(3) {
+  right: 4px;
+  left: 9px;
+}
+
+a {
+  font-family: 'Source Code Pro', monospace;
+  color: #917758;
+  text-decoration: none;
   font-size: 14px;
 }
 
-a:hover { 
+a:hover {
   text-decoration: underline;
 }
 
-p { 
-  font-family: 'Forum', serif; 
-  font-size: 20px; 
+p {
+  font-family: 'Forum', serif;
+  font-size: 20px;
+  margin: 10px 0;
 }
 
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #e0e0e0;
+  background-color: #90a0a0;
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+  background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+  background-size: 3px 3px;
 }
 
 body>div {
   margin: 0 auto;
   max-width: 750px;
-  background-color: white;
+  background-color: #fafafa;
   min-height: 100%;
   border: 0 solid #666;
   border-width: 0 1px;
-  box-shadow: 0 0 4px 1px #999;
+  box-shadow: 0 0 4px 1px #000;
 }
 
-body>div>div {
-  padding: 30px 40px 60px;
+.things {
+  padding: 30px 0 60px;
 }
 
-body>div>div>div>div { 
-  margin: 0 25px; 
+.intro {
+  text-align: center;
 }
 
-body>div>div>div>div>div { 
-  margin: 0 25px; 
+.projects>div>div>div {
+  margin: 0 65px;
 }
 
+.project {
+  border: 0 solid #aaa;
+  border-width: 0 0 1px;
+  padding: 20px 25px;
+  background-color: #e9e9e9;
+}
+.project:nth-of-type(2n+1) {
+  background-color: #e0e0e0;
+}
+.project:nth-of-type(1) {
+  border-top-width: 1px;
+}
